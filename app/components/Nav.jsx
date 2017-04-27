@@ -1,0 +1,11 @@
+import React from 'react'
+
+const Nav = React.createClass({
+  render: function () {
+    return (
+      <h2>Nav Component</h2>
+    );
+  }
+});
+
+module.exports = Nav;
