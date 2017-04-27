@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Weather = React.createClass({
+const About = React.createClass({
   render: function () {
     return (
       <h3>About Component</h3>
@@ -8,4 +8,4 @@ const Weather = React.createClass({
   }
 });
 
-module.exports = Weather
+module.exports = About
