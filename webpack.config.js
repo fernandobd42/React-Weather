@@ -1,9 +1,8 @@
 module.exports = {
   entry: './app/app.jsx',
   output: {
-    path: path.join (__dirname, '/dist'),
-    filename: 'bundle.js',
-    publicPath: '/public/'
+    path: __dirname,
+    filename: './public/bundle.js'
   },
   resolve: {
     root: __dirname,
