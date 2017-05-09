@@ -25516,11 +25516,14 @@
 	    null,
 	    _react2.default.createElement(_Nav2.default, null),
 	    _react2.default.createElement(
-	      'h2',
-	      null,
-	      'Main Component'
-	    ),
-	    props.children
+	      'div',
+	      { className: 'row' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'columns medium-6 large-4 small-centered' },
+	        props.children
+	      )
+	    )
 	  );
 	};
 
@@ -29374,6 +29377,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(166);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Examples = function Examples(props) {
@@ -29382,13 +29387,53 @@
 	    null,
 	    _react2.default.createElement(
 	      'h3',
-	      null,
+	      { className: 'text-center' },
 	      'Examples'
 	    ),
 	    _react2.default.createElement(
 	      'p',
 	      null,
-	      'Welcome to the examples page.'
+	      'Here are a few exemple location to try out:'
+	    ),
+	    _react2.default.createElement(
+	      'ol',
+	      null,
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/?location=Bom-Despacho' },
+	          'Bom Despacho - Brasil'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/?location=Dois-Vizinhos' },
+	          'Dois Vizinhos - Brasil'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/?location=Perth' },
+	          'Perth - Austr\xE1lia'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/?location=Quebec' },
+	          'Quebec - Canad\xE1'
+	        )
+	      )
 	    )
 	  );
 	};
