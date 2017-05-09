@@ -29239,9 +29239,18 @@
 
 	var About = function About(props) {
 	  return _react2.default.createElement(
-	    'h3',
+	    'div',
 	    null,
-	    'About Component'
+	    _react2.default.createElement(
+	      'h3',
+	      null,
+	      'About'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Welcome to the about page.'
+	    )
 	  );
 	};
 
@@ -29261,9 +29270,18 @@
 
 	var Examples = function Examples(props) {
 	  return _react2.default.createElement(
-	    'h3',
+	    'div',
 	    null,
-	    'Examples Component'
+	    _react2.default.createElement(
+	      'h3',
+	      null,
+	      'Examples'
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Welcome to the exemples page.'
+	    )
 	  );
 	};
 
