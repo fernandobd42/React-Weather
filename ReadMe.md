@@ -2,6 +2,6 @@
 
 ### to init, run:
 
-**first:** npm install && webpack
+**first:** yarn install
 
-**then:** node server.js
+**then:** node server.js && webpack -w
