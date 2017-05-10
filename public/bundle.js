@@ -126,6 +126,9 @@
 	__webpack_require__(268);
 	$(document).foundation();
 
+	// App css
+	__webpack_require__(272);
+
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
@@ -25607,7 +25610,7 @@
 	            _react2.default.createElement(
 	              'li',
 	              null,
-	              _react2.default.createElement('input', { type: 'search', placeholder: 'Search Weather' })
+	              _react2.default.createElement('input', { type: 'search', placeholder: 'Search Weather by City' })
 	            ),
 	            _react2.default.createElement(
 	              'li',
@@ -25711,7 +25714,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'h1',
-	        { className: 'text-center' },
+	        { className: 'text-center page-title' },
 	        'Get Weather'
 	      ),
 	      _react2.default.createElement(_WeatherForm2.default, { onSearch: this.handleSearch }),
@@ -25755,7 +25758,7 @@
 	      _react2.default.createElement(
 	        'form',
 	        { onSubmit: this.onFormSubmit },
-	        _react2.default.createElement('input', { type: 'text', ref: 'location' }),
+	        _react2.default.createElement('input', { type: 'search', ref: 'location', placeholder: 'Search Weather by City' }),
 	        _react2.default.createElement(
 	          'button',
 	          { className: 'button expanded hollow' },
@@ -29917,6 +29920,46 @@
 		if(oldSrc)
 			URL.revokeObjectURL(oldSrc);
 	}
+
+
+/***/ }),
+/* 272 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(273);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(271)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./app.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./app.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 273 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(270)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".page-title {\n    margin-top: 2.5rem;\n    margin-bottom: 2.5rem;\n}", ""]);
+
+	// exports
 
 
 /***/ })

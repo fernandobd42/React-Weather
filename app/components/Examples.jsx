@@ -4,7 +4,7 @@ import {Link} from 'react-router'
 const Examples = (props) => {
     return (
       <div>
-        <h3 className="text-center">Examples</h3>
+        <h1 className="text-center page-title">Examples</h1>
         <p>Here are a few exemple location to try out:</p>
         <ol>
           <li>
