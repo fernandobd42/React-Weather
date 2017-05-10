@@ -4,4 +4,6 @@
 
 **first:** yarn install
 
-**then:** node server.js && webpack -w
+**then:**  webpack && yarn start
+
+**or:** push the changes on github and run 'git push heroku master'
