@@ -29459,7 +29459,7 @@
 	    null,
 	    _react2.default.createElement(
 	      "h1",
-	      { className: "text-center" },
+	      { className: "text-center page-title" },
 	      "About"
 	    ),
 	    _react2.default.createElement(
@@ -29520,8 +29520,8 @@
 	    'div',
 	    null,
 	    _react2.default.createElement(
-	      'h3',
-	      { className: 'text-center' },
+	      'h1',
+	      { className: 'text-center page-title' },
 	      'Examples'
 	    ),
 	    _react2.default.createElement(
@@ -29938,8 +29938,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!./app.css", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!./app.css");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./app.scss", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./app.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29957,7 +29957,7 @@
 
 
 	// module
-	exports.push([module.id, ".page-title {\n    margin-top: 2.5rem;\n    margin-bottom: 2.5rem;\n}", ""]);
+	exports.push([module.id, ".page-title {\n  color: #555;\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem; }\n\ninput[type=\"search\"] {\n  box-shadow: none; }\n", ""]);
 
 	// exports
 
