@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const OPEN_WEATHER_MAP_URL = 'https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?appid=4d67d2527e9a42b3763b81c7fa44a928&units=metric';
+const OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=4d67d2527e9a42b3763b81c7fa44a928&units=metric';
 
 module.exports = {
   getTemp: function (location) {
