@@ -25923,7 +25923,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=4d67d2527e9a42b3763b81c7fa44a928&units=metric';
+	var OPEN_WEATHER_MAP_URL = 'https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?appid=4d67d2527e9a42b3763b81c7fa44a928&units=metric';
 
 	module.exports = {
 	  getTemp: function getTemp(location) {
